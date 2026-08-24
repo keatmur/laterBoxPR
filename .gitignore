@@ -1,0 +1,6 @@
+# Release assets are published through GitHub Releases, not committed.
+releases/
+
+# Local OS files
+.DS_Store
+Thumbs.db
