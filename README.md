@@ -1,10 +1,10 @@
-# LaterBox
+# Kiplet
 
-LaterBox is a Kotlin Multiplatform app for saving things to watch or read later across Android, iOS, and Desktop.
+Kiplet (formerly LaterBox) is a Kotlin Multiplatform app for saving things to watch or read later across Android, iOS, and Desktop.
 
 **Website:** https://keatmur.github.io/laterBoxPR/ · [Русская версия](https://keatmur.github.io/laterBoxPR/ru.html)
 
-<img src="./media/screenshots/focus.webp" alt="LaterBox Focus tab" width="300"> <img src="./media/screenshots/track.webp" alt="Editing an item" width="300">
+<img src="./media/screenshots/focus.webp" alt="Kiplet Focus tab" width="300"> <img src="./media/screenshots/track.webp" alt="Editing an item" width="300">
 
 ## Download
 
@@ -13,9 +13,9 @@ Builds are published on [GitHub Releases](https://github.com/keatmur/laterBoxPR/
 | Platform | Download |
 |---|---|
 | Android (Google Play) | [group.byte.buddies.laterbox](https://play.google.com/store/apps/details?id=group.byte.buddies.laterbox) |
-| Android (APK) | [LaterBox-android.apk](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-android.apk) |
-| Windows (MSI, recommended) | [LaterBox-windows.msi](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.msi) |
-| Windows (EXE) | [LaterBox-windows.exe](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.exe) |
+| Android (APK) | [Kiplet-android.apk](https://github.com/keatmur/laterBoxPR/releases/latest/download/Kiplet-android.apk) |
+| Windows (MSI, recommended) | [Kiplet-windows.msi](https://github.com/keatmur/laterBoxPR/releases/latest/download/Kiplet-windows.msi) |
+| Windows (EXE) | [Kiplet-windows.exe](https://github.com/keatmur/laterBoxPR/releases/latest/download/Kiplet-windows.exe) |
 
 Android: allow installing apps from unknown sources before opening the APK.
 Windows: the installer is not code-signed yet, so SmartScreen may ask for confirmation ("More info" → "Run anyway").
@@ -37,7 +37,7 @@ Targets: Android, iOS, Desktop (JVM).
 
 ## Architecture
 
-LaterBox follows a clean layered structure:
+Kiplet follows a clean layered structure:
 
 - `presentation`: Compose UI, screens, and view models
 - `domain`: business models and rules
@@ -47,7 +47,7 @@ Details: [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md). Diagrams: [domain model
 
 ## About This Repository
 
-This public repository is the showcase and release hub for LaterBox. It contains:
+This public repository is the showcase and release hub for Kiplet. It contains:
 
 - the landing page served by GitHub Pages (`index.html`, `ru.html`, `assets/`, `media/`); colors and the Domine font follow the app theme, screenshots are the Google Play store images
 - architecture notes and diagrams

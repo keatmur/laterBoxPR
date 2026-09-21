@@ -1,8 +1,8 @@
-# LaterBox Architecture
+# Kiplet Architecture
 
 ## Overview
 
-LaterBox is designed as a local-first Kotlin Multiplatform application with shared business logic and shared UI for Android, iOS, and Desktop.
+Kiplet is designed as a local-first Kotlin Multiplatform application with shared business logic and shared UI for Android, iOS, and Desktop.
 
 The main product goal is simple: save a URL, extract metadata, classify the content, and keep it organized for later consumption.
 
@@ -83,7 +83,7 @@ This keeps the app responsive and reduces coupling between product logic and bac
 
 ## Why This Project Is Worth Showing
 
-LaterBox demonstrates several useful engineering concerns in one app:
+Kiplet demonstrates several useful engineering concerns in one app:
 
 - Kotlin Multiplatform structure
 - shared UI with Compose Multiplatform
