@@ -1,63 +1,54 @@
 # Publishing Guide
 
-This repository is intended to be public and act as the release hub for LaterBox.
+This public repository is the release hub and website for LaterBox. The production source code lives in a private repository, where this repository is included as the `showcase-repo` git submodule.
 
-## Recommended Setup
+## Website
 
-- Keep the full production repository private.
-- Keep this repository public.
-- Attach ready-to-install artifacts to GitHub Releases in this repository.
+The landing page is served by GitHub Pages from the `main` branch root:
 
-## Release Artifacts
+- https://keatmur.github.io/laterBoxPR/
+- https://keatmur.github.io/laterBoxPR/ru.html
 
-Recommended public assets:
+If the repository is renamed or a custom domain is connected, update the URLs in `index.html`, `ru.html` (canonical, hreflang, Open Graph, download links), `sitemap.xml`, `robots.txt`, and `README.md`.
 
-- `LaterBox-android-vX.Y.apk`
-- `LaterBox-windows-vX.Y.msi`
+## Release Assets
+
+Binaries are attached to GitHub Releases and are never committed. Asset names do not contain a version, so the website links to `releases/latest/download/<name>` always serve the newest build:
+
+| Asset | Source in the private repository |
+|---|---|
+| `LaterBox-android.apk` | `composeApp/build/outputs/apk/release/composeApp-release.apk` |
+| `LaterBox-windows.msi` | `composeApp/build/compose/binaries/main-release/msi/LaterBox-<version>.msi` |
+| `LaterBox-windows.exe` | `composeApp/build/compose/binaries/main-release/exe/LaterBox-<version>.exe` |
 
 ## Build Commands
 
-From the private main repository:
-
-### Android
+Run from the private repository root:
 
 ```powershell
 .\gradlew.bat :composeApp:assembleRelease
+.\gradlew.bat :composeApp:packageReleaseMsi :composeApp:packageReleaseExe
 ```
 
-Expected output is the Android release artifact under the module build outputs directory.
+Before building, bump `versionCode` / `versionName` (Android) and `packageVersion` (Desktop) in `composeApp/build.gradle.kts`.
 
-### Windows
+## Release Workflow
+
+1. Build the artifacts listed above.
+2. Copy them under the asset names from the table.
+3. Create the release (requires [GitHub CLI](https://cli.github.com/), authenticated with `gh auth login`):
 
 ```powershell
-.\gradlew.bat :composeApp:packageReleaseMsi
+gh release create v1.1.0 `
+  LaterBox-android.apk LaterBox-windows.msi LaterBox-windows.exe `
+  --repo keatmur/laterBoxPR --title "LaterBox 1.1.0" --notes-file notes.md
 ```
 
-The project is currently configured to package Windows as `msi`, not `exe`.
+4. Check that the download buttons on the website work.
+5. If the website changed, commit and push this repository, then update the submodule pointer in the private repository.
 
-## Public Release Workflow
+## What Not To Publish
 
-1. Build the Android release artifact in the private repository.
-2. Build the Windows `msi` artifact in the private repository.
-3. Open the public GitHub repository.
-4. Create a new GitHub Release with version tag such as `v1.1.0`.
-5. Upload the `apk` and `msi` files as release assets.
-6. Update release notes with user-facing changes.
-
-## Public Repository Content
-
-This public repository should contain:
-
-- `README.md`
-- screenshots and diagrams
-- architecture overview
-- release notes
-- downloadable binaries through GitHub Releases
-
-This public repository should not contain:
-
-- secrets
-- signing files
-- local environment files
+- secrets, signing keys, `keystore.properties`, `local.properties`
 - internal planning documents
-- the full private production implementation unless you intentionally decide to publish it
+- the private production source code

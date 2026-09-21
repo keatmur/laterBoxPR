@@ -4,3 +4,8 @@ releases/
 # Local OS files
 .DS_Store
 Thumbs.db
+
+# Build artifacts are attached to GitHub Releases, never committed.
+*.apk
+*.msi
+*.exe

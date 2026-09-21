@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://keatmur.github.io/LaterBox/sitemap.xml
+Sitemap: https://keatmur.github.io/laterBoxPR/sitemap.xml

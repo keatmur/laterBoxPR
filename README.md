@@ -2,89 +2,58 @@
 
 LaterBox is a Kotlin Multiplatform app for saving things to watch or read later across Android, iOS, and Desktop.
 
-This public repository is a showcase and release hub for the project. It contains product overview, architecture notes, screenshots, and downloadable builds. The full production repository remains private.
+**Website:** https://keatmur.github.io/laterBoxPR/ · [Русская версия](https://keatmur.github.io/laterBoxPR/ru.html)
+
+![LaterBox main screen](./media/screenshots/laterbox-main-real.png)
+
+## Download
+
+Builds are published on [GitHub Releases](https://github.com/keatmur/laterBoxPR/releases). The links below always point to the latest version.
+
+| Platform | Download |
+|---|---|
+| Android | [LaterBox-android.apk](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-android.apk) |
+| Windows (MSI, recommended) | [LaterBox-windows.msi](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.msi) |
+| Windows (EXE) | [LaterBox-windows.exe](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.exe) |
+
+Android: allow installing apps from unknown sources before opening the APK.
+Windows: the installer is not code-signed yet, so SmartScreen may ask for confirmation ("More info" → "Run anyway").
 
 ## What It Does
 
-- Save links from articles, videos, books, podcasts, movies, and series
+- Save links to articles, videos, books, podcasts, movies, and series
 - Parse page metadata automatically from the URL
 - Classify content into meaningful content types
 - Organize items by mode: `FOCUS` and `CHILL`
 - Track progress for reading and watching
-- Follow a local-first architecture with planned cross-device sync
+- Local-first storage, with cross-device sync planned
 
 ## Tech Stack
 
-- Kotlin Multiplatform
-- Compose Multiplatform
-- SQLDelight
-- Koin
-- Ktor Client
-- Ksoup
-- Material 3
+Kotlin Multiplatform · Compose Multiplatform · Material 3 · SQLDelight · Koin · Ktor Client · Ksoup
 
-## Platforms
-
-- Android
-- iOS
-- Desktop (JVM)
+Targets: Android, iOS, Desktop (JVM).
 
 ## Architecture
 
 LaterBox follows a clean layered structure:
 
-- `presentation` for Compose UI, screens, and view models
-- `domain` for business models and rules
-- `data` for repositories, local persistence, and metadata parsing
+- `presentation`: Compose UI, screens, and view models
+- `domain`: business models and rules
+- `data`: repositories, local persistence, and metadata parsing
 
-More details are available in [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md).
+Details: [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md). Diagrams: [domain model](./media/domain-model-diagram.png), [progress flow](./media/progress-flow-diagram.png).
 
-## Highlights
+## About This Repository
 
-- Shared business logic across mobile and desktop targets
-- Local-first storage design
-- Metadata extraction from arbitrary URLs
-- Heuristic content type detection for article, video, book, podcast, movie, and series pages
-- Compose Multiplatform UI with platform-specific integrations where needed
+This public repository is the showcase and release hub for LaterBox. It contains:
 
-## Screenshots And Diagrams
+- the landing page served by GitHub Pages (`index.html`, `ru.html`, `assets/`, `media/`)
+- architecture notes and diagrams
+- release builds, attached to GitHub Releases (binaries are not committed to the repository)
 
-- Domain model diagram: [media/domain-model-diagram.png](./media/domain-model-diagram.png)
-- Progress flow diagram: [media/progress-flow-diagram.png](./media/progress-flow-diagram.png)
-
-## Public Site
-
-This repository is intended to work as both:
-
-- a public product page through GitHub Pages
-- a download hub through GitHub Releases
-
-Recommended Pages URL:
-
-- `https://keatmur.github.io/LaterBox/`
-
-If you later connect a custom domain, replace canonical URLs and sitemap entries accordingly.
-
-## Downloads
-
-Published builds are attached to GitHub Releases in this repository.
-
-- Android: `apk`
-- Windows: `msi`
-
-Release notes and the publishing flow are documented in [docs/PUBLISHING.md](./docs/PUBLISHING.md).
-
-## Repository Scope
-
-This repository intentionally does not contain the full production source code.
-
-It is meant to show:
-
-- the product direction
-- the technical stack
-- the architecture decisions
-- the release artifacts
+The full production source code is kept in a private repository. The release process is described in [docs/PUBLISHING.md](./docs/PUBLISHING.md).
 
 ## Contact
 
-If you want a private walkthrough of the full implementation for interview or review purposes, contact the repository owner.
+For a walkthrough of the full implementation (for example, for an interview or code review), contact the repository owner.
