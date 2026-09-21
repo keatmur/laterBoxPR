@@ -3,265 +3,153 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LaterBox | Save Links For Later Without The Mess</title>
-    <meta
-        name="description"
-        content="LaterBox helps you save articles, videos, books, podcasts, movies, and series in one organized place you can actually come back to later."
-    >
-    <meta
-        name="keywords"
-        content="LaterBox, watch later, read later, save links, reading list, watch list, Android app, desktop app"
-    >
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="LaterBox">
-    <meta
-        property="og:description"
-        content="Save links for later, stay organized, and pick up where you left off."
-    >
+    <title>LaterBox | Save &amp; Read Later</title>
+    <meta name="description" content="LaterBox is a simple read-it-later app. Save links to articles, videos, movies, series, and books, split them into Focus and Chill, and track your progress.">
+    <meta name="theme-color" content="#4d7b34">
+    <meta property="og:title" content="LaterBox: Save &amp; Read Later">
+    <meta property="og:description" content="Never lose a link again. Save, organize, and actually come back to what you wanted to read or watch.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keatmur.github.io/laterBoxPR/">
-    <meta property="og:image" content="https://keatmur.github.io/laterBoxPR/media/screenshots/laterbox-main-real.png">
+    <meta property="og:image" content="https://keatmur.github.io/laterBoxPR/media/screenshots/focus.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LaterBox">
-    <meta
-        name="twitter:description"
-        content="A cleaner app for saving what you want to watch or read later."
-    >
     <link rel="canonical" href="https://keatmur.github.io/laterBoxPR/">
     <link rel="alternate" hreflang="en" href="https://keatmur.github.io/laterBoxPR/">
     <link rel="alternate" hreflang="ru" href="https://keatmur.github.io/laterBoxPR/ru.html">
     <link rel="alternate" hreflang="x-default" href="https://keatmur.github.io/laterBoxPR/">
+    <link rel="icon" type="image/png" href="./assets/icon.png">
+    <link rel="preload" href="./assets/fonts/domine_regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
     <header class="hero">
-        <div class="hero__content">
-            <div class="topbar">
-                <a class="brand" href="#top">LaterBox</a>
-                <div class="topbar__right">
-                    <nav class="topbar__nav">
-                        <a href="#downloads">Download</a>
-                        <a href="#why">Why LaterBox</a>
-                        <a href="#screenshots">Screenshots</a>
-                        <a href="#faq">FAQ</a>
-                    </nav>
-                    <div class="lang-switch" aria-label="Language switcher">
-                        <a class="lang-switch__link lang-switch__link--active" href="./index.html">EN</a>
-                        <a class="lang-switch__link" href="./ru.html">RU</a>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__layout" id="top">
-                <div class="hero__copy">
-                    <p class="eyebrow">Save For Later, Properly</p>
-                    <h1>Save what you want to watch or read, without the chaos.</h1>
-                    <p class="hero__lead">
-                        LaterBox keeps articles, videos, books, podcasts, movies, and series in
-                        one organized library, so it is easier to decide what to open next and
-                        return to unfinished things later.
-                    </p>
-                    <div class="hero__pillbar">
-                        <span class="pill">Android</span>
-                        <span class="pill">Desktop</span>
-                        <span class="pill">Focus</span>
-                        <span class="pill">Chill</span>
-                    </div>
-                    <div class="hero__actions">
-                        <a class="button button--primary" href="https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-android.apk">Get Android APK</a>
-                        <a class="button button--secondary" href="#screenshots">See Screenshots</a>
-                    </div>
-                    <div class="hero__meta">
-                        <span>Keep every saved link together</span>
-                        <span>Separate focus from chill</span>
-                        <span>Pick up where you left off</span>
-                    </div>
-                </div>
-                <aside class="hero__panel">
-                    <p class="panel__eyebrow">Why it feels better</p>
-                    <h2>A better home than scattered bookmarks.</h2>
-                    <ul class="panel__list">
-                        <li>Your saved items become readable cards instead of raw links.</li>
-                        <li>Books, articles, movies, podcasts, and series can live together without becoming messy.</li>
-                        <li>You can come back to unfinished things without losing your place.</li>
-                    </ul>
-                    <div class="panel__stats">
-                        <div class="stat">
-                            <strong>6</strong>
-                            <span>content types</span>
-                        </div>
-                        <div class="stat">
-                            <strong>2</strong>
-                            <span>main modes</span>
-                        </div>
-                        <div class="stat">
-                            <strong>1</strong>
-                            <span>calmer queue</span>
-                        </div>
-                    </div>
-                </aside>
+        <div class="container header">
+            <a class="brand" href="./">
+                <img src="./assets/icon.png" alt="" width="36" height="36">
+                LaterBox
+            </a>
+            <nav class="lang" aria-label="Language">
+                <a href="./" aria-current="page">EN</a>
+                <a href="./ru.html" hreflang="ru">RU</a>
+            </nav>
+        </div>
+        <div class="container hero__inner">
+            <h1>Never lose a link again.</h1>
+            <p>
+                Save articles, videos, movies, series, and books in one place, and actually come back
+                to them. LaterBox fills in the details and remembers where you left off.
+            </p>
+            <div class="actions">
+                <a class="button button--primary" href="https://play.google.com/store/apps/details?id=group.byte.buddies.laterbox">Get it on Google Play</a>
+                <a class="button button--outline" href="#download">Download for Windows</a>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="section section--grid">
-            <div class="card">
-                <h2>What It Does</h2>
-                <ul>
-                    <li>Save URLs for things you want to read, watch, or revisit later</li>
-                    <li>Pull useful page details automatically instead of showing a bare link</li>
-                    <li>Separate more focused content from more casual content</li>
-                    <li>Track progress so unfinished items do not disappear into the list</li>
-                    <li>Keep everything in one cleaner library instead of scattering it across apps</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h2>What You Can Save</h2>
-                <ul>
-                    <li>Articles</li>
-                    <li>Videos</li>
-                    <li>Books</li>
-                    <li>Podcasts</li>
-                    <li>Movies</li>
-                    <li>Series</li>
-                </ul>
+    <main class="container">
+        <section class="section" aria-labelledby="screens-title">
+            <h2 id="screens-title">A calm list you'll actually use</h2>
+            <p class="section__lead">Scroll to see more.</p>
+            <div class="shots" tabindex="0" aria-label="Screenshots">
+                <figure class="shot">
+                    <img src="./media/screenshots/focus.webp" width="678" height="1357" alt="Focus tab with articles, courses and progress" loading="lazy">
+                </figure>
+                <figure class="shot">
+                    <img src="./media/screenshots/relax.webp" width="678" height="1357" alt="Chill tab with movies, series and books" loading="lazy">
+                </figure>
+                <figure class="shot">
+                    <img src="./media/screenshots/copy-link-left.webp" width="652" height="1412" alt="Copied link is offered for saving" loading="lazy">
+                </figure>
+                <figure class="shot">
+                    <img src="./media/screenshots/copy-link-right.webp" width="652" height="1412" alt="Title and type are filled in automatically" loading="lazy">
+                </figure>
+                <figure class="shot">
+                    <img src="./media/screenshots/track.webp" width="652" height="1412" alt="Editing status, season, episode and notes" loading="lazy">
+                </figure>
             </div>
         </section>
 
-        <section class="section section--grid section--offset" id="why">
-            <div class="section__intro">
-                <p class="eyebrow">Why LaterBox</p>
-                <h2>Made for people who save too much and lose track too fast.</h2>
-                <p class="section__lead">
-                    Most save-later tools stop at the moment you drop in a link. LaterBox tries to
-                    help after that point too, so the list stays useful instead of becoming storage.
-                </p>
-            </div>
-            <div class="why-grid">
-                <article class="why-card">
-                    <p class="why-card__index">01</p>
-                    <h3>Readable at a glance</h3>
-                    <p>
-                        Saved items surface title, image, and context so you can scan your list fast
-                        and actually remember why you kept something.
-                    </p>
-                </article>
-                <article class="why-card">
-                    <p class="why-card__index">02</p>
-                    <h3>Focus and chill stay separate</h3>
-                    <p>
-                        A serious article queue should not feel the same as a casual watchlist.
-                        LaterBox keeps those moods apart.
-                    </p>
-                </article>
-                <article class="why-card">
-                    <p class="why-card__index">03</p>
-                    <h3>Progress is part of the experience</h3>
-                    <p>
-                        If you started a book, series, or article, the app helps you return to it
-                        without guessing where you left off.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section" id="downloads">
-            <div class="section__header">
-                <p class="eyebrow">Downloads</p>
-                <h2>Download LaterBox</h2>
-                <p class="section__lead">
-                    Builds for Android and Windows are published on GitHub Releases. The buttons
-                    below always point to the latest version.
-                </p>
-            </div>
-            <div class="download-grid">
-                <article class="download-card">
-                    <h3>Android</h3>
-                    <p>Download the latest Android build and install it on your device.</p>
-                    <a class="button button--primary button--full" href="https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-android.apk">Download APK</a>
-                    <p class="download-note">File: <code>LaterBox-android.apk</code></p>
-                </article>
-                <article class="download-card">
-                    <h3>Windows</h3>
-                    <p>Download the Windows installer. The MSI package is recommended; an EXE installer is also available.</p>
-                    <a class="button button--primary button--full" href="https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.msi">Download MSI</a>
-                    <p class="download-note">Also available: <a class="text-link" href="https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.exe">EXE installer</a></p>
-                </article>
-                <article class="download-card">
-                    <h3>Updates</h3>
-                    <p>Every version, with release notes, is published on GitHub Releases.</p>
-                    <div class="download-links">
-                        <a class="text-link" href="https://github.com/keatmur/laterBoxPR/releases">View Releases</a>
-                        <a class="text-link" href="https://github.com/keatmur/laterBoxPR">Open Project Page</a>
+        <section class="section" aria-labelledby="features-title">
+            <h2 id="features-title">How it works</h2>
+            <p class="section__lead">No setup and no account required to get started.</p>
+            <ul class="features">
+                <li class="feature">
+                    <span class="feature__tile" aria-hidden="true">Save<br>link</span>
+                    <div>
+                        <h3>Save in seconds</h3>
+                        <p>Paste a URL, share from any app, or just copy a link. LaterBox notices it and offers to save it.</p>
                     </div>
+                </li>
+                <li class="feature">
+                    <span class="feature__tile" aria-hidden="true">Auto<br>fill</span>
+                    <div>
+                        <h3>Details filled in</h3>
+                        <p>Title, cover, and content type are picked up automatically.</p>
+                    </div>
+                </li>
+                <li class="feature">
+                    <span class="feature__tile" aria-hidden="true">Focus<br>Chill</span>
+                    <div>
+                        <h3>Focus and Chill</h3>
+                        <p>Focus for what you want to learn from, Chill for what you want to enjoy. Switch anytime.</p>
+                    </div>
+                </li>
+                <li class="feature">
+                    <span class="feature__tile" aria-hidden="true">S2<br>E5</span>
+                    <div>
+                        <h3>Track progress</h3>
+                        <p>Set a status and leave notes. Books track pages, series track season and episode.</p>
+                    </div>
+                </li>
+                <li class="feature">
+                    <span class="feature__tile" aria-hidden="true">Tap<br>Swipe</span>
+                    <div>
+                        <h3>Simple gestures</h3>
+                        <p>Tap to open, long press to edit, swipe left to delete.</p>
+                    </div>
+                </li>
+                <li class="feature">
+                    <span class="feature__tile" aria-hidden="true">Sync</span>
+                    <div>
+                        <h3>On all your devices</h3>
+                        <p>Sign in to sync your list between Android and Windows. Without an account, everything stays on your device.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="download" aria-labelledby="download-title">
+            <h2 id="download-title">Download</h2>
+            <p class="section__lead">Free. Android and Windows now, iOS is on the way.</p>
+            <div class="downloads">
+                <article class="download">
+                    <span class="chip">Recommended</span>
+                    <h3>Android</h3>
+                    <p>Install from Google Play to get updates automatically.</p>
+                    <a class="button button--primary" href="https://play.google.com/store/apps/details?id=group.byte.buddies.laterbox">Google Play</a>
+                    <a class="text-link" href="https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-android.apk">Or download the APK</a>
                 </article>
-            </div>
-        </section>
-
-        <section class="section" id="screenshots">
-            <div class="section__header">
-                <p class="eyebrow">Screenshots</p>
-                <h2>See LaterBox On Desktop</h2>
-                <p class="section__lead">
-                    Real screenshots captured from the running desktop app.
-                </p>
-            </div>
-            <div class="screenshot-grid">
-                <figure class="screenshot-card">
-                    <img src="./media/screenshots/laterbox-main-real.png" alt="LaterBox main desktop screen">
-                    <figcaption>Main library view with focus mode, progress overview, and saved items list.</figcaption>
-                </figure>
-                <figure class="screenshot-card">
-                    <img src="./media/screenshots/laterbox-modal-real.png" alt="LaterBox add item dialog on desktop">
-                    <figcaption>Add item dialog with parsed link data and fields for organizing a saved item.</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section class="section" id="faq">
-            <div class="section__header">
-                <p class="eyebrow">FAQ</p>
-                <h2>Common Questions</h2>
-            </div>
-            <div class="faq-list">
-                <details class="faq-item" open>
-                    <summary>What is LaterBox for?</summary>
-                    <p>
-                        It helps you save things you want to watch or read later, keep them in one
-                        place, and return to them without the usual bookmark mess.
-                    </p>
-                </details>
-                <details class="faq-item">
-                    <summary>Where do I download it?</summary>
-                    <p>
-                        Use the download buttons on this page, or open the Releases page on GitHub
-                        for every version of the Android APK and the Windows installer.
-                    </p>
-                </details>
-                <details class="faq-item">
-                    <summary>What makes it different from bookmarks?</summary>
-                    <p>
-                        LaterBox is built for content you actually plan to revisit, with clearer
-                        organization, content types, and progress tracking.
-                    </p>
-                </details>
-                <details class="faq-item">
-                    <summary>What can I save inside the app?</summary>
-                    <p>
-                        Articles, videos, books, podcasts, movies, and series.
-                    </p>
-                </details>
+                <article class="download">
+                    <h3>Windows</h3>
+                    <p>Windows 10 and 11. SmartScreen may ask to confirm: choose More info, then Run anyway.</p>
+                    <a class="button button--primary" href="https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.msi">Download MSI</a>
+                    <a class="text-link" href="https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.exe">Or download the EXE installer</a>
+                </article>
+                <article class="download">
+                    <h3>All versions</h3>
+                    <p>Release notes and earlier builds are on GitHub.</p>
+                    <a class="button button--outline" href="https://github.com/keatmur/laterBoxPR/releases">GitHub Releases</a>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>LaterBox</p>
-        <nav class="footer__nav">
-            <a href="#downloads">Download</a>
+    <footer class="container footer">
+        <span>LaterBox by ByteBuddies</span>
+        <nav aria-label="Footer">
+            <a href="https://play.google.com/store/apps/details?id=group.byte.buddies.laterbox">Google Play</a>
             <a href="https://github.com/keatmur/laterBoxPR/releases">Releases</a>
-            <a href="#faq">FAQ</a>
-            <a href="./ru.html">RU Version</a>
+            <a href="https://github.com/keatmur/laterBoxPR">GitHub</a>
+            <a href="./ru.html" hreflang="ru">Русский</a>
         </nav>
     </footer>
 </body>

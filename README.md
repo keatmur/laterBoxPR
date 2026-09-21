@@ -4,7 +4,7 @@ LaterBox is a Kotlin Multiplatform app for saving things to watch or read later 
 
 **Website:** https://keatmur.github.io/laterBoxPR/ · [Русская версия](https://keatmur.github.io/laterBoxPR/ru.html)
 
-![LaterBox main screen](./media/screenshots/laterbox-main-real.png)
+<img src="./media/screenshots/focus.webp" alt="LaterBox Focus tab" width="300"> <img src="./media/screenshots/track.webp" alt="Editing an item" width="300">
 
 ## Download
 
@@ -12,7 +12,8 @@ Builds are published on [GitHub Releases](https://github.com/keatmur/laterBoxPR/
 
 | Platform | Download |
 |---|---|
-| Android | [LaterBox-android.apk](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-android.apk) |
+| Android (Google Play) | [group.byte.buddies.laterbox](https://play.google.com/store/apps/details?id=group.byte.buddies.laterbox) |
+| Android (APK) | [LaterBox-android.apk](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-android.apk) |
 | Windows (MSI, recommended) | [LaterBox-windows.msi](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.msi) |
 | Windows (EXE) | [LaterBox-windows.exe](https://github.com/keatmur/laterBoxPR/releases/latest/download/LaterBox-windows.exe) |
 
@@ -48,7 +49,7 @@ Details: [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md). Diagrams: [domain model
 
 This public repository is the showcase and release hub for LaterBox. It contains:
 
-- the landing page served by GitHub Pages (`index.html`, `ru.html`, `assets/`, `media/`)
+- the landing page served by GitHub Pages (`index.html`, `ru.html`, `assets/`, `media/`); colors and the Domine font follow the app theme, screenshots are the Google Play store images
 - architecture notes and diagrams
 - release builds, attached to GitHub Releases (binaries are not committed to the repository)
 
