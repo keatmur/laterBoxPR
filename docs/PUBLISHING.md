@@ -6,8 +6,8 @@ This public repository is the release hub and website for Kiplet. The production
 
 The landing page is served by GitHub Pages from the `main` branch root:
 
-- https://keatmur.github.io/laterBoxPR/
-- https://keatmur.github.io/laterBoxPR/ru.html
+- https://keatmur.github.io/kiplet/
+- https://keatmur.github.io/kiplet/ru.html
 
 If the repository is renamed or a custom domain is connected, update the URLs in `index.html`, `ru.html` (canonical, hreflang, Open Graph, download links), `sitemap.xml`, `robots.txt`, and `README.md`.
 
@@ -41,7 +41,7 @@ Before building, bump `versionCode` / `versionName` (Android) and `packageVersio
 ```powershell
 gh release create v1.1.0 `
   Kiplet-android.apk Kiplet-windows.msi Kiplet-windows.exe `
-  --repo keatmur/laterBoxPR --title "Kiplet 1.1.0" --notes-file notes.md
+  --repo keatmur/kiplet --title "Kiplet 1.1.0" --notes-file notes.md
 ```
 
 4. Check that the download buttons on the website work.
